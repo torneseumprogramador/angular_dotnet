@@ -24,6 +24,8 @@
       <th scope="col">Nome</th>
       <th scope="col">Telefone</th>
       <th scope="col">Endereço</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -32,6 +34,12 @@
       <td>{{cliente.nome}}</td>
       <td>{{cliente.telefone}}</td>
       <td>{{cliente.endereco}}</td>
+      <td>
+        <button class="btn btn-primary" (click)="Alterar(cliente)">Alterar</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="Excluir(cliente)">Excluir</button>
+      </td>
     </tr>
   </tbody>
 </table>
